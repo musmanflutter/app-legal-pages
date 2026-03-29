@@ -29,12 +29,18 @@
   //    Runs after DOM is ready so the <img> exists
   document.addEventListener("DOMContentLoaded", function () {
     const logo = document.querySelector(".header-logo");
-    if (!logo) return;
+    const desktopLogo = document.querySelector(".desktop-logo");
+    const mobileLogo = document.querySelector(".mobile-logo");
 
-    if (theme === "light") {
-      logo.src = "assets/logo_text_dark.png";
-    } else {
-      logo.src = "assets/logo_text_light.png";
+    if (desktopLogo) {
+      desktopLogo.src =
+        theme === "light"
+          ? "assets/logo_text_dark.png"
+          : "assets/logo_text_light.png";
+    }
+    if (mobileLogo) {
+      mobileLogo.src =
+        theme === "light" ? "assets/logo_dark.png" : "assets/logo_light.png";
     }
   });
 })();

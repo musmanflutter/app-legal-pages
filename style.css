@@ -552,3 +552,24 @@ a:hover {
   text-decoration: none;
   color: #ffffff;
 }
+
+.mobile-logo {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .desktop-logo {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+  }
+  .site-header nav {
+    display: flex;
+    gap: 4px;
+  }
+  .site-header nav a {
+    font-size: 0.72rem;
+    padding: 5px 8px;
+  }
+}
