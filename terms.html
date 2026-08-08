@@ -29,6 +29,7 @@
         </a>
         <nav>
           <a href="index.html">Home</a>
+          <a href="limits.html">Limits</a>
           <a href="privacy.html">Privacy</a>
           <a href="terms.html" class="active">Terms</a>
           <a href="delete-account.html">Delete Account</a>
@@ -37,7 +38,7 @@
 
       <!-- PAGE TITLE -->
       <h1>Terms of Use</h1>
-      <p class="page-meta"><strong>Effective Date:</strong> January 26, 2026</p>
+      <p class="page-meta"><strong>Effective Date:</strong> August 7, 2026</p>
 
       <p class="intro">
         Welcome to <strong>Hubnex AI</strong> ("we", "our", or "us"). By
@@ -51,8 +52,9 @@
         <h2>1. Description of the Service</h2>
         <p>
           Hubnex AI is an AI-powered chat application that routes user prompts
-          to third-party AI models (including OpenAI, Google Gemini, and
-          DeepSeek) to generate responses.
+          to third-party AI models (including OpenAI ChatGPT, Anthropic Claude,
+          Google Gemini, DeepSeek, xAI Grok, and Together AI Qwen) to generate
+          responses.
         </p>
         <p>
           The App is provided for informational and productivity purposes only.
@@ -105,19 +107,24 @@
 
       <!-- 5 -->
       <section>
-        <h2>5. Usage Limits & Availability</h2>
+        <h2>5. Subscription Plans, Usage Limits & Availability</h2>
+        <p>
+          Hubnex AI offers free and paid subscription plans (Free, Pro, Max tiers). Each plan is subject to specific usage limits and daily allowances to maintain platform stability and manage API costs:
+        </p>
         <ul>
-          <li>Hubnex AI may enforce daily usage or token limits</li>
-          <li>Limits may vary by user and may change over time</li>
           <li>
-            Service availability is not guaranteed and may be interrupted due to
-            maintenance, outages, or third-party limitations
+            <strong>Daily Limits:</strong> Limits are calculated in dollar-equivalent token spend or message caps, which reset automatically every 24 hours. Resetting is done based on your local timezone.
+          </li>
+          <li>
+            <strong>Intelligent Model Cascades:</strong> To maximize service availability, paid tiers employ an automatic model routing cascade. If a user's high-consumption usage approaches their tier's cap, subsequent requests will automatically route to highly efficient mid-tier or failsafe models rather than shutting down access immediately.
+          </li>
+          <li>
+            <strong>Upgrade Resets:</strong> Upgrading to a higher plan instantly resets your token consumption count to 0, providing a fresh allowance.
+          </li>
+          <li>
+            <strong>Service Outages:</strong> Service availability is not guaranteed and may be interrupted due to maintenance, network latency, or third-party API provider downtime.
           </li>
         </ul>
-        <p>
-          Future versions of Hubnex AI may include subscription or premium
-          features.
-        </p>
       </section>
 
       <!-- 6 -->
