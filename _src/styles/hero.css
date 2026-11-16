@@ -1,0 +1,140 @@
+/* ── HERO ── */
+.hero {
+  background: radial-gradient(900px 420px at 50% -80px, var(--hero-glow), transparent 70%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 56px;
+  align-items: center;
+  padding-top: 64px;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-copy .lead {
+  font-size: 19px;
+  color: var(--text-soft);
+  max-width: 560px;
+}
+
+.badge {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+.badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.hero-meta strong {
+  color: var(--text);
+}
+
+.star {
+  color: #fbbf24;
+}
+
+/* Page hero for inner pages (single column). */
+.page-hero {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-hero > * {
+  max-width: 860px;
+}
+
+.page-hero h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+}
+
+.page-hero .lead {
+  font-size: 19px;
+  color: var(--text-soft);
+}
+
+/* ── MODEL STRIP ── */
+.model-strip {
+  margin-top: 72px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-raised);
+}
+
+.model-strip {
+  padding: 28px 0;
+  overflow: hidden;
+}
+
+.model-strip h2 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.pill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill-list li {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.pill-list .pill-auto {
+  background: var(--brand-gradient);
+  border-color: transparent;
+  color: #ffffff;
+}
+
+/* Inner page hero with a screenshot beside the text. */
+.page-hero-split {
+  padding-top: 8px;
+}
+
+.page-hero-split .page-hero {
+  padding-top: 32px;
+}

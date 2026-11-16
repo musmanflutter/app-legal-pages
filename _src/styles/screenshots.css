@@ -1,0 +1,76 @@
+/* ── SCREENSHOTS ── */
+.shot {
+  margin: 0 auto;
+  width: min(300px, 78vw);
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 30px 60px rgba(37, 63, 192, 0.35));
+}
+
+/* Text on one side, screenshot on the other. */
+.media-split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 48px;
+  align-items: center;
+}
+
+.shot-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+/* A screenshot with its caption or text: the text takes the phone's width. */
+.shot-item {
+  width: min(300px, 78vw);
+  margin-inline: auto;
+}
+
+.shot-item .shot {
+  width: 100%;
+}
+
+.shot-row figcaption,
+.shot-caption {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* ── PENDING MARKERS: content the owner still has to supply ── */
+.shot-pending {
+  aspect-ratio: 600 / 1291;
+  border: 2px dashed #f59e0b;
+  border-radius: 36px;
+  background: repeating-linear-gradient(-45deg, rgba(245, 158, 11, 0.08) 0 12px, transparent 12px 24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.shot-pending-badge,
+.pending-chip {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #f59e0b;
+  color: #1f1300;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.shot-pending-text {
+  font-size: 15px;
+  color: var(--text-soft);
+}

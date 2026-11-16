@@ -1,0 +1,159 @@
+/* ── ANSWER BOX ── */
+.answer {
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--brand-purple);
+  background: var(--feature-wash);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer h2 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--link);
+}
+
+.answer p {
+  font-size: 19px;
+}
+
+/* ── TABLES ── */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th,
+td {
+  padding: 16px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead tr {
+  background: var(--surface);
+}
+
+tbody tr {
+  border-top: 1px solid var(--border);
+}
+
+tbody th {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ── PROSE (articles, legal pages, long sections) ── */
+.prose {
+  color: var(--text-soft);
+}
+
+.prose > * {
+  max-width: 760px;
+}
+
+.prose > * + * {
+  margin-top: 16px;
+}
+
+.prose h2 {
+  margin-top: 48px;
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--text);
+}
+
+.prose h3 {
+  margin-top: 32px;
+  color: var(--text);
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 22px;
+}
+
+.prose li + li {
+  margin-top: 8px;
+}
+
+.prose strong {
+  color: var(--text);
+}
+
+.page-meta {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.prose h1 {
+  color: var(--text);
+}
+
+/* ── LEGAL PAGES ── */
+.legal h1 {
+  font-size: clamp(34px, 5vw, 48px);
+  margin-bottom: 8px;
+}
+
+.prose .intro {
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 18px;
+}
+
+.legal section {
+  margin-top: 8px;
+}
+
+.legal section > * + * {
+  margin-top: 14px;
+}
+
+.legal section > h2 {
+  margin-bottom: 4px;
+}
+
+
+/* Model-by-plan table on the pricing page. */
+.model-table .family-cell {
+  vertical-align: middle;
+  color: var(--text);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.model-table .family-cell img {
+  vertical-align: -3px;
+  margin-right: 8px;
+  padding: 2px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.model-table tbody tr {
+  border-top: 1px solid var(--border);
+}
+
+.model-table .yes {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.model-table .no {
+  color: var(--text-muted);
+}

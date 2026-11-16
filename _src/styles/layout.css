@@ -1,0 +1,71 @@
+/* ── LAYOUT ── */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-narrow > * {
+  max-width: 860px;
+}
+
+.section {
+  padding-top: 88px;
+  padding-bottom: 0;
+}
+
+.section > h2,
+.section-head {
+  margin-bottom: 40px;
+}
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 680px;
+}
+
+.section-head p {
+  color: var(--text-muted);
+}
+
+.band {
+  margin-top: 88px;
+  padding-bottom: 88px;
+  background: var(--bg-raised);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cyan);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.note {
+  margin-top: 20px;
+  color: var(--text-muted);
+}
+
+/* Horizontal scroll row (reviews). */
+.scroll-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min(340px, 82%);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 12px;
+}
+
+.scroll-row > * {
+  scroll-snap-align: start;
+}
