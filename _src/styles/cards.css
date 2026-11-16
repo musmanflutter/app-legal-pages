@@ -1,0 +1,234 @@
+/* ── FACT BOX ── */
+.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 48px;
+  align-items: start;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stack p {
+  color: var(--text-soft);
+}
+
+.facts {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.facts div {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.facts div:last-child {
+  border-bottom: 0;
+}
+
+.facts dt {
+  color: var(--text-muted);
+}
+
+.facts dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ── CARDS ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 26px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text);
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+a.card:hover {
+  text-decoration: none;
+  border-color: var(--brand-blue);
+}
+
+.card .more {
+  margin-top: auto;
+  color: var(--link);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.card-wide {
+  grid-column: 1 / -1;
+  background: var(--feature-wash);
+  min-height: 220px;
+  justify-content: space-between;
+}
+
+.card-wide p {
+  max-width: 560px;
+  color: var(--text-soft);
+}
+
+.icon {
+  --icon-color: var(--c-violet);
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--icon-color) 12%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--icon-color) 30%, transparent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+}
+
+/* Each feature keeps the same color everywhere on the site. */
+.icon:has(.i-globe) { --icon-color: var(--c-cyan); }
+.icon:has(.i-image) { --icon-color: var(--c-orange); }
+.icon:has(.i-brain), .icon:has(.i-auto) { --icon-color: var(--c-violet); }
+.icon:has(.i-pin) { --icon-color: var(--c-yellow); }
+.icon:has(.i-reply), .icon:has(.i-check) { --icon-color: var(--c-green); }
+.icon:has(.i-file), .icon:has(.i-chat) { --icon-color: var(--c-blue); }
+.icon:has(.i-mic), .icon:has(.i-mail) { --icon-color: var(--c-pink); }
+.icon:has(.i-pen), .icon:has(.i-book), .icon:has(.i-camera), .icon:has(.i-layers) { --icon-color: var(--c-teal); }
+
+.card-plain {
+  background: var(--surface);
+}
+
+/* Numbered steps. */
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+}
+
+.steps li {
+  counter-increment: step;
+}
+
+.steps li::before {
+  content: "0" counter(step);
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--violet);
+}
+
+.band .card {
+  background: var(--bg);
+}
+
+/* ── PRICING ── */
+.card .price {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.card .price small {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.card-highlight {
+  border-color: var(--brand-purple);
+  background: var(--feature-wash);
+}
+
+.tick-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text-soft);
+  font-size: 16px;
+}
+
+.tick-list li {
+  position: relative;
+  padding-left: 28px;
+}
+
+.tick-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 7px;
+  width: 12px;
+  height: 7px;
+  border-left: 2px solid var(--cyan);
+  border-bottom: 2px solid var(--cyan);
+  transform: rotate(-45deg);
+}
+
+/* ── REVIEWS ── */
+.review {
+  margin: 0;
+}
+
+.review blockquote {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.review figcaption {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.review-source {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.plans-mini {
+  margin-top: 16px;
+}
+
+/* Prompt library cards. */
+.prompt p {
+  flex: 1;
+  color: var(--text-soft);
+}
+
+.prompt .share-btn {
+  align-self: flex-start;
+}

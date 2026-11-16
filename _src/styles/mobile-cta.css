@@ -1,0 +1,44 @@
+/* ── MOBILE DOWNLOAD BAR (phones only) ── */
+.mobile-cta {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-cta {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 4px 14px 4px 18px;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--surface) 92%, transparent);
+    backdrop-filter: blur(10px);
+  }
+
+  .mobile-cta span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    font-size: 15px;
+  }
+
+  .mobile-cta small {
+    color: var(--text-muted);
+    font-size: 12px;
+  }
+
+  .mobile-cta .play-badge {
+    margin: -8px -10px;
+  }
+
+  /* Keep the footer's last line above the bar. */
+  .site-footer {
+    padding-bottom: 88px;
+  }
+}

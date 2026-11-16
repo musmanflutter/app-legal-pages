@@ -1,0 +1,59 @@
+/* ── BUTTONS ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  transition: transform 0.18s, opacity 0.18s;
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--brand-gradient);
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.btn-small {
+  min-height: 44px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.btn-small svg {
+  margin-right: -2px;
+}
+
+/* Official Google Play badge: the image has Google's clear space built in,
+   so the negative margin lines its visible edge up with the content around it. */
+.play-badge {
+  display: inline-flex;
+  margin: -12px -14px;
+  transition: transform 0.18s;
+}
+
+.play-badge:hover {
+  transform: translateY(-2px);
+}
+
+.play-badge img {
+  display: block;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+}

@@ -1,0 +1,70 @@
+/* ── TOKENS: dark theme is the default ── */
+:root {
+  --brand-blue: #253fc0;
+  --brand-purple: #944cff;
+  --brand-gradient: linear-gradient(135deg, #253fc0, #7d3cf0);
+
+  --bg: #050814;
+  --bg-raised: #08091a;
+  --surface: #111828;
+  --surface-soft: #0d1220;
+  --border: #1f2937;
+  --border-strong: #374151;
+
+  --text: #ffffff;
+  --text-soft: #b6bcc8;
+  --text-muted: #9ca3af;
+  --link: #c4b5fd;
+  --cyan: #67e8f9;
+  --violet: #a78bfa;
+
+  --hero-glow: rgba(148, 76, 255, 0.22);
+
+  /* Feature icon colors (soft, one per feature). */
+  --c-cyan: #22d3ee;
+  --c-orange: #fdba74;
+  --c-violet: #c4b5fd;
+  --c-yellow: #fcd34d;
+  --c-green: #86efac;
+  --c-blue: #93c5fd;
+  --c-pink: #f9a8d4;
+  --c-teal: #5eead4;
+  --feature-wash: linear-gradient(160deg, #150f39, #08091a 70%);
+
+  --radius-sm: 14px;
+  --radius: 22px;
+  --radius-lg: 32px;
+  --container: 1200px;
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Urbanist", system-ui, sans-serif;
+}
+
+/* Light theme: set by theme.js (?theme=light or the OS setting). */
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --bg-raised: #ffffff;
+  --surface: #f1f5f9;
+  --surface-soft: #eef2ff;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  --text: #0b1020;
+  --text-soft: #334155;
+  --text-muted: #526075;
+  --link: #5b21b6;
+  --cyan: #0e7490;
+  --violet: #6d28d9;
+
+  --hero-glow: rgba(148, 76, 255, 0.16);
+
+  --c-cyan: #0e7490;
+  --c-orange: #c2410c;
+  --c-violet: #6d28d9;
+  --c-yellow: #a16207;
+  --c-green: #15803d;
+  --c-blue: #1d4ed8;
+  --c-pink: #be185d;
+  --c-teal: #0f766e;
+  --feature-wash: linear-gradient(160deg, #e0e7ff, #ffffff 70%);
+}

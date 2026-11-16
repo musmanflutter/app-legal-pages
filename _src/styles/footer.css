@@ -1,0 +1,125 @@
+/* ── CTA BAND ── */
+.cta-band {
+  padding: 64px 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  background: radial-gradient(600px 300px at 50% 0%, rgba(148, 76, 255, 0.28), var(--surface) 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.cta-band img {
+  border-radius: 50%;
+}
+
+.cta-band h2 {
+  max-width: 640px;
+}
+
+.cta-band p {
+  max-width: 520px;
+  color: var(--text-soft);
+}
+
+/* ── FOOTER ── */
+.site-footer {
+  margin-top: 88px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-raised);
+  font-size: 15px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 1.4fr) repeat(5, minmax(0, 1fr));
+  gap: 32px;
+  padding-top: 56px;
+  padding-bottom: 32px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+.footer-col h2 {
+  font-family: var(--font-body);
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col a,
+.footer-brand a {
+  color: var(--text-muted);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.social-list {
+  margin-top: 4px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  color: var(--text-soft);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.footer-brand .social-btn:hover {
+  color: #ffffff;
+  border-color: transparent;
+  background: var(--brand-gradient);
+  text-decoration: none;
+}
+
+/* Below desktop width, brand row on top, link columns flow underneath. */
+@media (max-width: 1100px) {
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}

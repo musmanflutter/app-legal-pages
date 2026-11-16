@@ -1,0 +1,51 @@
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .nav-links {
+    display: none;
+  }
+
+  .header-inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding-top: 64px;
+  }
+
+  .band {
+    margin-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .header-inner {
+    gap: 12px;
+  }
+
+  .brand span {
+    display: none;
+  }
+
+  .facts div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .phone {
+    width: 280px;
+    height: 580px;
+  }
+
+  .cta-band {
+    padding: 48px 20px;
+  }
+}

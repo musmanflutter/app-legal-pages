@@ -1,0 +1,4 @@
+# GitHub Pages (Jekyll) settings: keep these repo files off the public website.
+exclude:
+  - AGENTS.md
+  - CLAUDE.md
