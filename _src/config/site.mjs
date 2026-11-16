@@ -11,8 +11,9 @@ export const site = {
   // Canonical store listing, used in structured data.
   playStoreUrl: "https://play.google.com/store/apps/details?id=com.hubnexai.app",
 
-  // Google Analytics 4 measurement ID, e.g. "G-XXXXXXXXXX". Empty = no tracking script.
-  gaId: "",
+  // GA4 Measurement ID of the "Hubnex AI Website" stream in the "hubnex-ai" property
+  // (Admin → Data streams → Hubnex AI Website). Empty = no tracking script.
+  gaMeasurementId: "G-MNJGT72RNT",
   googleSiteVerification: "sP17MAwv-gsEXH-8gEg8Fd1sJLe9FFYaPk5ei3I96aE",
 
   // Shown when a link is shared on social media (1200×630).

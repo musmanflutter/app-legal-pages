@@ -17,7 +17,7 @@ _src/
 ├── build.mjs               build script: pages + styles + scripts + sitemap, with SEO checks
 ├── layout.mjs              puts a page together from the components
 ├── config/
-│   ├── site.mjs            site settings: links, Google Analytics ID, nav, footer, social accounts
+│   ├── site.mjs            site settings: links, GA4 Measurement ID, nav, footer, social accounts
 │   ├── models.mjs          the AI models by family and plan (used by the model strip and pricing table)
 │   └── screenshots.mjs     app screenshots and the placeholders for missing ones
 ├── components/             shared pieces: head, header, breadcrumb, faq, cta-band, footer,

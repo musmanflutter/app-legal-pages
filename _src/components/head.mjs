@@ -3,10 +3,17 @@ import { site } from "../config/site.mjs";
 import { structuredData } from "../seo/schema.mjs";
 import { escapeHtml } from "../utils/html.mjs";
 
+// Google Analytics 4 tag (gtag.js), placed right after <head> as Google recommends.
 function analytics() {
-  if (!site.gaId) return "";
-  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${site.gaId}"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","${site.gaId}");</script>`;
+  const id = site.gaMeasurementId;
+  if (!id) return "";
+  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${id}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${id}');
+    </script>`;
 }
 
 export function head(page) {
@@ -17,6 +24,7 @@ export function head(page) {
       ? `<meta name="google-site-verification" content="${site.googleSiteVerification}" />`
       : "";
   return `<head>
+    ${analytics()}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(page.title)}</title>
@@ -42,7 +50,6 @@ export function head(page) {
     <link rel="stylesheet" href="/style.css" />
     <script src="/theme.js"></script>
     <script src="/site.js" defer></script>
-    ${analytics()}
     ${structuredData(page)}
   </head>`;
 }

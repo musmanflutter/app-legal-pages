@@ -40,7 +40,7 @@ Do not stage, unstage, commit, push or merge. The owner stages changes to review
 ## 5. Things still pending (owner to supply)
 
 - **Screenshots:** the build prints which ones are missing; they show as "Screenshot pending" on the site. Add them in `_src/config/screenshots.mjs`.
-- **Google Analytics ID:** `gaId` in `_src/config/site.mjs`. When it's added, also update section 8 ("Website") of the privacy policy to describe website analytics.
+- **Google Analytics:** the GA4 Measurement ID is `gaMeasurementId` in `_src/config/site.mjs`; the privacy policy (sections 1.3 and 8) describes it.
 - **Other apps' prices** in the price calculator (`_src/components/price-calculator.mjs`) and on the comparison pages were checked November 2026. Re-check them now and then.
 
 ## 6. Publishing
