@@ -4,7 +4,7 @@ export const site = {
   name: "Hubnex AI",
   origin: "https://www.hubnexai.com",
   developer: "BisonTech Studio",
-  email: "umuhammad662@gmail.com",
+  email: "support@hubnexai.com",
 
   // Tracked link used by every "Get it on Google Play" button.
   downloadUrl: "https://get.hubnexai.com/website",
