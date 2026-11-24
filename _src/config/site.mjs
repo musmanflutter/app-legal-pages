@@ -29,11 +29,39 @@ export const socials = [
   { name: "Facebook", url: "https://www.facebook.com/hubnexai" },
 ];
 
+// Header navigation. An entry with "items" is a dropdown; "key" matches a page's "nav" field
+// so the right top-level item is highlighted.
 export const nav = [
-  { key: "features", label: "Features", href: "/#features" },
-  { key: "image", label: "Image generator", href: "/ai-image-generator/" },
-  { key: "students", label: "For students", href: "/ai-for-students/" },
-  { key: "compare", label: "Compare", href: "/hubnex-ai-vs-chatgpt/" },
+  {
+    key: "features",
+    label: "Features",
+    items: [
+      ["AI image generator", "/ai-image-generator/"],
+      ["Chat with PDF", "/chat-with-pdf/"],
+      ["AI web search", "/ai-web-search/"],
+      ["AI writing assistant", "/ai-writing-assistant/"],
+      ["All features", "/#features"],
+    ],
+  },
+  {
+    key: "students",
+    label: "Use cases",
+    items: [
+      ["AI for students", "/ai-for-students/"],
+      ["AI homework helper", "/ai-homework-helper/"],
+    ],
+  },
+  {
+    key: "compare",
+    label: "Compare",
+    items: [
+      ["Hubnex AI vs ChatGPT", "/hubnex-ai-vs-chatgpt/"],
+      ["Hubnex AI vs Claude", "/hubnex-ai-vs-claude/"],
+      ["Hubnex AI vs Perplexity", "/hubnex-ai-vs-perplexity/"],
+      ["Hubnex AI vs Poe", "/hubnex-ai-vs-poe/"],
+      ["ChatGPT alternative", "/chatgpt-alternative/"],
+    ],
+  },
   { key: "pricing", label: "Pricing", href: "/limits.html" },
   { key: "blog", label: "Blog", href: "/blog/" },
 ];

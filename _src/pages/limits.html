@@ -1,7 +1,7 @@
 ---
 {
   "url": "/limits.html",
-  "updated": "2026-11-17",
+  "updated": "2026-11-24",
   "nav": "pricing",
   "title": "Hubnex AI Pricing: Free, Pro and Max Plans and Daily Limits",
   "description": "Hubnex AI is free to start. Compare the Free, Pro ($10/month) and Max ($20/month) plans, which AI models each includes, and how daily limits and resets work.",
@@ -43,7 +43,7 @@
       <p class="price">$0<small> / month</small></p>
       <ul class="tick-list">
         <li>AI chat, vision, web search and image generation</li>
-        <li>Fast models from all 7 families: GPT-6 Luna, Claude Haiku 5.5, Gemini 3.1 Flash-Lite, DeepSeek Flash, Grok 4.3, Qwen 3.8 Flash and Perplexity Sonar fast search</li>
+        <li>Fast models from all 7 families: GPT-6 Luna, Claude Haiku 5.5, Gemini 3.1 Flash-Lite, DeepSeek Flash, Grok 4.3, Qwen 3.8 Flash and Perplexity Sonar</li>
         <li>Daily usage limit</li>
       </ul>
     </div>
@@ -52,8 +52,8 @@
       <p>For everyday productivity</p>
       <p class="price">$10<small> / month</small></p>
       <ul class="tick-list">
-        <li>About 20× the Free daily limit</li>
-        <li>Everything in Free, plus GPT-6.1 Terra, Claude Sonnet 5.5, Gemini 3.8 Flash, DeepSeek V4 Pro, Qwen 3.7 Plus and Perplexity Sonar deep web search</li>
+        <li>About 10× the Free daily limit</li>
+        <li>Everything in Free, plus GPT-6.1 Terra, Claude Sonnet 5.5, Gemini 3.8 Flash, DeepSeek V4 Pro, Qwen 3.7 Plus and deeper Perplexity web search</li>
         <li>Intelligent cascade balances quality and remaining budget</li>
       </ul>
     </div>
@@ -62,9 +62,9 @@
       <p>For flagship performance</p>
       <p class="price">$20<small> / month</small></p>
       <ul class="tick-list">
-        <li>2× the Pro daily limit</li>
+        <li>2× the Pro daily limit (about 20× Free)</li>
         <li>Everything in Pro, plus the flagships: GPT-6.1 Sol, Claude Opus 5.5, Gemini 3.1 Pro, Grok 4.7 and Qwen 3.7 Max</li>
-        <li>Largest allowance for web search, reasoning and image generation</li>
+        <li>Largest allowance for web search, Thinking Mode and image generation</li>
       </ul>
     </div>
   </div>
@@ -74,7 +74,7 @@
 <section class="section container" aria-labelledby="models-heading">
   <div class="section-head">
     <h2 id="models-heading">Which AI models are in each plan</h2>
-    <p>Every plan includes all seven AI model families. Higher plans add stronger models; each plan includes everything in the plans below it.</p>
+    <p>Every plan includes all seven AI model families, and each family has an Auto option that picks its best model for you. Higher plans add stronger models; each plan includes everything in the plans below it. Perplexity Sonar searches more deeply on Pro and Max.</p>
   </div>
   {{modelTable}}
 </section>
@@ -91,7 +91,11 @@
     <li><strong>Mid-tier (35%):</strong> after heavy use, your prompts move to balanced models like GPT-6.1 Terra or Claude Sonnet 5.5, so you can keep chatting.</li>
     <li><strong>Failsafe (15%):</strong> near the end of the allowance, very efficient models like GPT-6 Luna or Claude Haiku 5.5 keep your chat going.</li>
   </ol>
-  <p>When the whole allowance is used, the app shows a limit message until it resets.</p>
+  <p>When the whole allowance is used, the app shows a card with the exact reset time, and Free users can upgrade from there.</p>
+
+  <h2>See your usage any time</h2>
+  <p>The <strong>Usage</strong> page in the app shows how much of today's allowance is left, which model tiers it covers, and exactly when it resets. No guessing, and no surprise cut-offs.</p>
+  {{shot:usage}}
 
   <h2>Limit reset and upgrade rules</h2>
   <ul>

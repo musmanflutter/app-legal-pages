@@ -44,19 +44,110 @@
 .nav-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 4px 22px;
   font-size: 15px;
   font-weight: 600;
 }
 
 .nav-links a,
-.nav-menu a {
+.nav-menu a,
+.nav-drop summary,
+.nav-group summary {
   color: var(--text-soft);
 }
 
 .nav-links a[aria-current="page"],
-.nav-menu a[aria-current="page"] {
+.nav-menu a[aria-current="page"],
+.nav-drop summary.is-active,
+.nav-group summary.is-active {
   color: var(--text);
+}
+
+/* Desktop dropdowns */
+.nav-drop {
+  position: relative;
+}
+
+.nav-drop summary,
+.nav-group summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-drop summary::-webkit-details-marker,
+.nav-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-drop summary:hover {
+  color: var(--text);
+}
+
+.nav-drop summary svg,
+.nav-group summary svg {
+  transition: transform 0.15s ease;
+}
+
+.nav-drop[open] summary svg,
+.nav-group[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.nav-drop-panel {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 14px);
+  transform: translateX(-50%);
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 16px 40px rgb(0 0 0 / 0.25);
+}
+
+.nav-drop-panel a {
+  padding: 10px 14px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.nav-drop-panel a:hover {
+  background: color-mix(in srgb, var(--text) 7%, transparent);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-drop-panel a:last-child:not(:only-child) {
+  margin-top: 4px;
+}
+
+/* Mobile menu groups */
+.nav-menu .nav-group summary {
+  width: 100%;
+  min-height: 0;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 0;
+  font-weight: inherit;
+}
+
+.nav-group-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 6px 12px;
+}
+
+.nav-menu .nav-group-panel a {
+  padding: 10px 14px;
+  font-weight: 500;
 }
 
 .nav-menu {
@@ -84,7 +175,9 @@
   position: absolute;
   right: 0;
   top: 52px;
-  min-width: 220px;
+  min-width: 260px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   padding: 8px;

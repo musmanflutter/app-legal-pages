@@ -1,6 +1,7 @@
 // The AI models in Hubnex AI, by family and by the cheapest plan that includes them.
 // Plans are cumulative: Pro includes every Free model, Max includes every Free and Pro model.
 // Update this list when the app's models change; the model strip and the pricing table use it.
+// Each family also has an "Auto" option in the app that picks the best model of that family.
 
 export const PLANS = ["free", "pro", "max"];
 export const PLAN_NAMES = { free: "Free", pro: "Pro", max: "Max" };
@@ -31,7 +32,9 @@ export const modelFamilies = [
     maker: "Google",
     logo: "gemini",
     models: [
+      { name: "Gemini 3.5 Flash-Lite", plan: "free" },
       { name: "Gemini 3.1 Flash-Lite", plan: "free" },
+      { name: "Gemini 2.5 Flash-Lite", plan: "free" },
       { name: "Gemini 3.8 Flash", plan: "pro" },
       { name: "Gemini 3.1 Pro", plan: "max" },
     ],
@@ -69,8 +72,7 @@ export const modelFamilies = [
     maker: "Perplexity",
     logo: "perplexity",
     models: [
-      { name: "Perplexity Sonar (Fast Search)", plan: "free" },
-      { name: "Perplexity Sonar (Deep Web Search)", plan: "pro" },
+      { name: "Perplexity Sonar", plan: "free" },
     ],
   },
 ];

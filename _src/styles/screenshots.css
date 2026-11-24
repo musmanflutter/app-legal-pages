@@ -74,3 +74,17 @@
   font-size: 15px;
   color: var(--text-soft);
 }
+
+.shot-center {
+  margin-top: 32px;
+}
+
+/* Two screenshots side by side inside a text + image split. */
+.media-split .shot-row {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.media-split .shot-row .shot-item {
+  width: 100%;
+}

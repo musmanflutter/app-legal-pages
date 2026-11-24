@@ -22,7 +22,7 @@ function mobileApplication() {
     operatingSystem: "Android 7.0 or later",
     applicationCategory: "ProductivityApplication",
     description:
-      "All-in-one AI chat assistant that brings ChatGPT, Claude, Gemini, DeepSeek, Grok, Qwen and Perplexity into one app, with web search, image generation, file uploads and reasoning mode.",
+      "All-in-one AI chat assistant that brings ChatGPT, Claude, Gemini, DeepSeek, Grok, Qwen and Perplexity into one app, with web search, image generation, file uploads and Thinking Mode.",
     url: `${site.origin}/`,
     downloadUrl: site.playStoreUrl,
     installUrl: site.playStoreUrl,

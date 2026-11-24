@@ -93,7 +93,7 @@
           "name": "What file types can I upload?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "PDFs, documents, photos, screenshots and code files. You can also paste an image straight from your clipboard."
+            "text": "Documents in PDF, TXT, CSV, Markdown (MD) and JSON format, up to 20 MB each, plus up to 10 photos or screenshots per message. Long documents are read up to about 50,000 characters (around 8,000 words). For code, paste it as text or send a screenshot."
           }
         },
         {
@@ -119,10 +119,9 @@
           <span>Hubnex AI</span>
         </a>
         <nav class="nav-links" aria-label="Main">
-          <a href="/#features" aria-current="page">Features</a>
-          <a href="/ai-image-generator/">Image generator</a>
-          <a href="/ai-for-students/">For students</a>
-          <a href="/hubnex-ai-vs-chatgpt/">Compare</a>
+          <details class="nav-drop"><summary class="is-active">Features<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-drop-panel"><a href="/ai-image-generator/">AI image generator</a><a href="/chat-with-pdf/" aria-current="page">Chat with PDF</a><a href="/ai-web-search/">AI web search</a><a href="/ai-writing-assistant/">AI writing assistant</a><a href="/#features">All features</a></div></details>
+          <details class="nav-drop"><summary>Use cases<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-drop-panel"><a href="/ai-for-students/">AI for students</a><a href="/ai-homework-helper/">AI homework helper</a></div></details>
+          <details class="nav-drop"><summary>Compare<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-drop-panel"><a href="/hubnex-ai-vs-chatgpt/">Hubnex AI vs ChatGPT</a><a href="/hubnex-ai-vs-claude/">Hubnex AI vs Claude</a><a href="/hubnex-ai-vs-perplexity/">Hubnex AI vs Perplexity</a><a href="/hubnex-ai-vs-poe/">Hubnex AI vs Poe</a><a href="/chatgpt-alternative/">ChatGPT alternative</a></div></details>
           <a href="/limits.html">Pricing</a>
           <a href="/blog/">Blog</a>
         </nav>
@@ -131,12 +130,11 @@
           <details class="nav-menu">
             <summary>Menu</summary>
             <nav aria-label="Mobile">
-              <a href="/#features" aria-current="page">Features</a>
-          <a href="/ai-image-generator/">Image generator</a>
-          <a href="/ai-for-students/">For students</a>
-          <a href="/hubnex-ai-vs-chatgpt/">Compare</a>
-          <a href="/limits.html">Pricing</a>
-          <a href="/blog/">Blog</a>
+              <details class="nav-group"><summary class="is-active">Features<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-group-panel"><a href="/ai-image-generator/">AI image generator</a><a href="/chat-with-pdf/" aria-current="page">Chat with PDF</a><a href="/ai-web-search/">AI web search</a><a href="/ai-writing-assistant/">AI writing assistant</a><a href="/#features">All features</a></div></details>
+              <details class="nav-group"><summary>Use cases<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-group-panel"><a href="/ai-for-students/">AI for students</a><a href="/ai-homework-helper/">AI homework helper</a></div></details>
+              <details class="nav-group"><summary>Compare<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-group-panel"><a href="/hubnex-ai-vs-chatgpt/">Hubnex AI vs ChatGPT</a><a href="/hubnex-ai-vs-claude/">Hubnex AI vs Claude</a><a href="/hubnex-ai-vs-perplexity/">Hubnex AI vs Perplexity</a><a href="/hubnex-ai-vs-poe/">Hubnex AI vs Poe</a><a href="/chatgpt-alternative/">ChatGPT alternative</a></div></details>
+              <a href="/limits.html">Pricing</a>
+              <a href="/blog/">Blog</a>
             </nav>
           </details>
         </div>
@@ -154,9 +152,8 @@
   <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="207" height="80" />
 </a></div>
   </div>
-  <figure class="shot shot-pending" role="img" aria-label="Screenshot coming soon">
-      <span class="shot-pending-badge">Screenshot pending</span>
-      <span class="shot-pending-text">PDF chat: a PDF attached to a message and its summary</span>
+  <figure class="shot">
+      <img src="/assets/screenshots/pdf-chat.webp" alt="Hubnex AI summarizing an uploaded PDF" width="600" height="1291" fetchpriority="high" decoding="async" />
     </figure>
 </section>
 
@@ -165,7 +162,7 @@
   <ol class="grid steps">
     <li class="card">
       <h3>Attach the file</h3>
-      <p>Add a PDF, document, photo or code file to your message.</p>
+      <p>Add a PDF, TXT, CSV, Markdown or JSON file, or up to 10 photos, to your message.</p>
     </li>
     <li class="card">
       <h3>Ask your question</h3>
@@ -229,7 +226,7 @@
   </ul>
 
   <h2>Files you can upload</h2>
-  <p>Hubnex AI reads more than PDFs. Upload Word-style documents, photos of printed pages or handwritten notes, screenshots, and code files. You can paste an image straight from your clipboard too. Once you have a summary, keep going in the same chat: ask for flashcards, a simpler version, or a list of questions to bring to your next meeting or class.</p>
+  <p>Hubnex AI reads more than PDFs. Upload PDF, TXT, CSV, Markdown and JSON files (up to 20 MB), or up to 10 photos of printed pages, handwritten notes or screenshots in one message, and ask the AI to compare them. You can paste an image straight from your clipboard too, and paste code as text. Once you have a summary, keep going in the same chat: ask for flashcards, a simpler version, or a list of questions to bring to your next meeting or class.</p>
 </section>
 
       <section class="section container container-narrow" id="faq" aria-labelledby="faq-heading">
@@ -246,7 +243,7 @@
         </details>
         <details class="faq-item">
           <summary>What file types can I upload?</summary>
-          <p>PDFs, documents, photos, screenshots and code files. You can also paste an image straight from your clipboard.</p>
+          <p>Documents in PDF, TXT, CSV, Markdown (MD) and JSON format, up to 20 MB each, plus up to 10 photos or screenshots per message. Long documents are read up to about 50,000 characters (around 8,000 words). For code, paste it as text or send a screenshot.</p>
         </details>
         <details class="faq-item">
           <summary>Which AI is best for summarizing PDFs?</summary>

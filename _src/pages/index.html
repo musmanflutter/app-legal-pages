@@ -1,7 +1,7 @@
 ---
 {
   "url": "/",
-  "updated": "2026-11-17",
+  "updated": "2026-11-24",
   "nav": "",
   "title": "Hubnex AI: All-in-One AI App with ChatGPT, Claude & Gemini",
   "description": "Free all-in-one AI app for Android. Use ChatGPT, Claude, Gemini, DeepSeek, Grok, Qwen and Perplexity in one chat, or let Auto pick the right model.",
@@ -85,7 +85,7 @@
   <div class="stack">
     <h2 id="what-heading">What is Hubnex AI?</h2>
     <p>Hubnex AI is an all-in-one AI chat assistant for Android, made by BisonTech Studio. It's an AI app with multiple models: it brings the leading AI models into one app, so you can write, research, study, code and create images with whichever model fits the task, without paying for and switching between separate AI apps.</p>
-    <p>Auto mode reads your prompt and picks a suitable model. Real-time web search adds source links, Reasoning mode shows step-by-step thinking, and Keep lets the AI remember pinned messages even in very long chats.</p>
+    <p>Auto mode reads your prompt and picks a suitable model. Real-time web search adds source links, Thinking Mode shows step-by-step thinking, and Keep lets the AI remember pinned messages even in very long chats.</p>
   </div>
   <dl class="facts">
     <div><dt>Developer</dt><dd>BisonTech Studio</dd></div>
@@ -112,8 +112,8 @@
       <p class="shot-caption"><a href="/ai-image-generator/">AI image generator</a></p>
     </div>
     <div class="shot-item">
-      {{shot:reasoning-mode}}
-      <p class="shot-caption">Reasoning mode shows its thinking</p>
+      {{shot:thinking-mode}}
+      <p class="shot-caption">Thinking Mode shows its thinking</p>
     </div>
   </div>
 </section>
@@ -136,19 +136,19 @@
     <a class="card" href="/ai-web-search/">
       <span class="icon">{{icon:globe}}</span>
       <h3>AI chat with web search</h3>
-      <p>Current answers for news and research, with source links you can open and check.</p>
+      <p>Current answers for news and research, with source links you can check. Grok can even search live posts on X.</p>
       <span class="more">AI web search</span>
     </a>
     <a class="card" href="/ai-image-generator/">
       <span class="icon">{{icon:image}}</span>
       <h3>AI image generator</h3>
-      <p>Create images from text right inside your chat, then reply to an image to change it.</p>
+      <p>Create images with GPT Image 2, or use Image Studio templates to turn a selfie into a headshot, action figure or anime portrait.</p>
       <span class="more">AI image generator</span>
     </a>
     <a class="card" href="/chat-with-pdf/">
       <span class="icon">{{icon:file}}</span>
       <h3>Chat with PDFs and files</h3>
-      <p>Upload PDFs, documents, photos or code to summarize, explain or ask questions.</p>
+      <p>Upload PDF, TXT, CSV, Markdown or JSON files, or up to 10 photos, to summarize, compare or ask questions.</p>
       <span class="more">Chat with PDF</span>
     </a>
     <a class="card" href="/ai-writing-assistant/">
@@ -159,13 +159,23 @@
     </a>
     <article class="card">
       <span class="icon">{{icon:brain}}</span>
-      <h3>Reasoning mode</h3>
-      <p>Use reasoning models for math, coding and logic, and see the step-by-step thinking before the answer.</p>
+      <h3>Thinking Mode</h3>
+      <p>For math, coding and logic: watch a live "Thinking for 5s" timer, then open the step-by-step thinking behind the answer.</p>
     </article>
     <article class="card">
       <span class="icon">{{icon:mic}}</span>
       <h3>AI voice to text</h3>
       <p>Speak instead of typing with built-in voice input, then send your message to any model.</p>
+    </article>
+    <article class="card">
+      <span class="icon">{{icon:auto}}</span>
+      <h3>Regenerate, edit and share</h3>
+      <p>Get a fresh answer with one tap, edit your last message to ask again, and share any answer. Inappropriate answers can be reported.</p>
+    </article>
+    <article class="card">
+      <span class="icon">{{icon:chat}}</span>
+      <h3>Your chats, organized</h3>
+      <p>Search your chat history, pin important chats to the top, rename them, and switch between light and dark mode.</p>
     </article>
   </div>
 </section>
@@ -175,7 +185,7 @@
     <div class="section-head">
       <span class="eyebrow">Built for long chats</span>
       <h2 id="memory-heading">An AI that remembers what matters</h2>
-      <p>Most AI chats forget your instructions after a while. Hubnex AI gives you two tools to keep long conversations on track.</p>
+      <p>Most AI chats forget your instructions after a while. Hubnex AI automatically summarizes long conversations in the background so the AI keeps their context, and gives you two tools for the things it must never forget.</p>
     </div>
     <div class="shot-row">
       <div class="stack shot-item">
@@ -204,10 +214,20 @@
       <p>Choose the AI you trust for the job, or let Hubnex AI pick for you.</p>
     </li>
     <li class="card">
-      <h3>Add tools when you need them</h3>
-      <p>Turn on web search, image generation or Reasoning mode whenever a task needs it.</p>
+      <h3>Start with a quick action</h3>
+      <p>A new chat opens with four one-tap actions: create an image, search the web, think it through or ask about a file. Or turn tools on from the + menu.</p>
     </li>
   </ol>
+  <div class="shot-row shot-center">
+    <div class="shot-item">
+      {{shot:start-screen}}
+      <p class="shot-caption">Quick actions on every new chat</p>
+    </div>
+    <div class="shot-item">
+      {{shot:chat-list}}
+      <p class="shot-caption">Pin and rename your chats</p>
+    </div>
+  </div>
 </section>
 
 <section class="section container" aria-labelledby="who-heading">
@@ -257,7 +277,7 @@
       <h3>Pro</h3>
       <p class="price">$10<small> / month</small></p>
       <ul class="tick-list">
-        <li>About 20× the Free daily limit</li>
+        <li>About 10× the Free daily limit</li>
         <li>Adds GPT-6.1 Terra, Claude Sonnet 5.5, DeepSeek V4 Pro and more</li>
         <li>Smart model cascade</li>
       </ul>
@@ -268,7 +288,7 @@
       <ul class="tick-list">
         <li>2× the Pro daily limit</li>
         <li>Adds GPT-6.1 Sol, Claude Opus 5.5, Gemini 3.1 Pro, Grok 4.7 and Qwen 3.7 Max</li>
-        <li>Most web search, reasoning and images</li>
+        <li>Most web search, Thinking Mode and images</li>
       </ul>
     </div>
   </div>

@@ -119,10 +119,9 @@
           <span>Hubnex AI</span>
         </a>
         <nav class="nav-links" aria-label="Main">
-          <a href="/#features" aria-current="page">Features</a>
-          <a href="/ai-image-generator/">Image generator</a>
-          <a href="/ai-for-students/">For students</a>
-          <a href="/hubnex-ai-vs-chatgpt/">Compare</a>
+          <details class="nav-drop"><summary class="is-active">Features<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-drop-panel"><a href="/ai-image-generator/">AI image generator</a><a href="/chat-with-pdf/">Chat with PDF</a><a href="/ai-web-search/" aria-current="page">AI web search</a><a href="/ai-writing-assistant/">AI writing assistant</a><a href="/#features">All features</a></div></details>
+          <details class="nav-drop"><summary>Use cases<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-drop-panel"><a href="/ai-for-students/">AI for students</a><a href="/ai-homework-helper/">AI homework helper</a></div></details>
+          <details class="nav-drop"><summary>Compare<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-drop-panel"><a href="/hubnex-ai-vs-chatgpt/">Hubnex AI vs ChatGPT</a><a href="/hubnex-ai-vs-claude/">Hubnex AI vs Claude</a><a href="/hubnex-ai-vs-perplexity/">Hubnex AI vs Perplexity</a><a href="/hubnex-ai-vs-poe/">Hubnex AI vs Poe</a><a href="/chatgpt-alternative/">ChatGPT alternative</a></div></details>
           <a href="/limits.html">Pricing</a>
           <a href="/blog/">Blog</a>
         </nav>
@@ -131,12 +130,11 @@
           <details class="nav-menu">
             <summary>Menu</summary>
             <nav aria-label="Mobile">
-              <a href="/#features" aria-current="page">Features</a>
-          <a href="/ai-image-generator/">Image generator</a>
-          <a href="/ai-for-students/">For students</a>
-          <a href="/hubnex-ai-vs-chatgpt/">Compare</a>
-          <a href="/limits.html">Pricing</a>
-          <a href="/blog/">Blog</a>
+              <details class="nav-group"><summary class="is-active">Features<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-group-panel"><a href="/ai-image-generator/">AI image generator</a><a href="/chat-with-pdf/">Chat with PDF</a><a href="/ai-web-search/" aria-current="page">AI web search</a><a href="/ai-writing-assistant/">AI writing assistant</a><a href="/#features">All features</a></div></details>
+              <details class="nav-group"><summary>Use cases<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-group-panel"><a href="/ai-for-students/">AI for students</a><a href="/ai-homework-helper/">AI homework helper</a></div></details>
+              <details class="nav-group"><summary>Compare<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-group-panel"><a href="/hubnex-ai-vs-chatgpt/">Hubnex AI vs ChatGPT</a><a href="/hubnex-ai-vs-claude/">Hubnex AI vs Claude</a><a href="/hubnex-ai-vs-perplexity/">Hubnex AI vs Perplexity</a><a href="/hubnex-ai-vs-poe/">Hubnex AI vs Poe</a><a href="/chatgpt-alternative/">ChatGPT alternative</a></div></details>
+              <a href="/limits.html">Pricing</a>
+              <a href="/blog/">Blog</a>
             </nav>
           </details>
         </div>
@@ -155,7 +153,7 @@
 </a></div>
   </div>
   <figure class="shot">
-      <img src="/assets/screenshots/web-search.webp" alt="Hubnex AI web search answer about the latest AI news with source links" width="600" height="1291" fetchpriority="high" decoding="async" />
+      <img src="/assets/screenshots/web-search.webp" alt="Hubnex AI web search answer with source links" width="600" height="1291" fetchpriority="high" decoding="async" />
     </figure>
 </section>
 
@@ -217,10 +215,17 @@
 </section>
 
 <section class="section container prose" aria-labelledby="more-heading">
-  <h2 id="more-heading">Research with AI, the careful way</h2>
-  <h2>Web search vs normal AI chat</h2>
+  <h2 id="more-heading">Web search vs normal AI chat</h2>
   <p>A normal AI chat answers from what the model learned during training, which is great for explanations, writing and brainstorming. An AI with internet search reads current pages first, so it's the right choice for anything that changes: news, prices, schedules, scores and new releases. In Hubnex AI you get both in the same chat, so you never have to switch apps to check something recent.</p>
   <p>Tip: say what kind of source you trust, like "use official sites" or "only news from this week", to get more useful results.</p>
+  <h2>Live X (Twitter) search with Grok</h2>
+  <p>For trends, breaking news and what people are saying right now, pick a Grok model. Grok can search posts on X (Twitter) in real time, next to normal web search, so you get the conversation as well as the articles. Perplexity Sonar is also built in for fast answers with sources.</p>
+  <figure class="shot">
+      <img src="/assets/screenshots/grok-x-search.webp" alt="Grok in Hubnex AI summarizing what people on X say about the newest Google Pixel phone" width="600" height="1291" loading="lazy" decoding="async" />
+    </figure>
+  <p class="shot-caption">Grok summarizing what people on X are saying</p>
+
+  <h2>Research with AI, the careful way</h2>
   <p>Web search makes AI answers more current, but it doesn't make them perfect. Open the sources for anything important, especially health, money or legal topics. For research projects, combine web search with <a href="/chat-with-pdf/">chat with PDF</a> to read full papers, and see <a href="/ai-for-students/">AI for students</a> for study tips.</p>
 </section>
 

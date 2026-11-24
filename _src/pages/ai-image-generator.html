@@ -1,10 +1,10 @@
 ---
 {
   "url": "/ai-image-generator/",
-  "updated": "2026-11-17",
-  "nav": "image",
+  "updated": "2026-11-24",
+  "nav": "features",
   "title": "Free AI Image Generator App: Create Images from Text",
-  "description": "Create images from text with the free AI image generator in Hubnex AI for Android. Describe a picture, get it in seconds, then reply to the image to change it.",
+  "description": "Free AI image generator app: create images from text with GPT Image 2, or use Image Studio templates for AI headshots and action figures.",
   "breadcrumb": [["AI image generator", "/ai-image-generator/"]],
   "faqs": [
     {
@@ -14,6 +14,18 @@
     {
       "q": "Do I need a separate app to generate AI images?",
       "a": "No. You create images inside the same chat where you talk to ChatGPT, Claude, Gemini and the other models, so you can ask an AI to write a prompt and then generate the image straight away."
+    },
+    {
+      "q": "Which AI model creates the images?",
+      "a": "Images in Hubnex AI are made with OpenAI's GPT Image 2, the same model for every plan."
+    },
+    {
+      "q": "Can I turn my selfie into an AI headshot or action figure?",
+      "a": "Yes. In Image Studio, pick Pro Headshot, Action Figure, Anime Portrait or 80s Vintage Photo, attach your photo, and the AI transforms it. These templates need a photo, and the app reminds you to add one."
+    },
+    {
+      "q": "Where can I find the images I made?",
+      "a": "Every image you create is saved in My Creations in Image Studio, where you can download, share, copy the prompt or open it again to edit."
     },
     {
       "q": "Can I edit an AI image after it is created?",
@@ -30,7 +42,7 @@
   <div class="page-hero">
   <span class="eyebrow">AI image generator app</span>
   <h1>Free AI image generator: create images from text</h1>
-  <p class="lead">Describe a picture in your own words and Hubnex AI turns it into an image in seconds, right inside your chat. Free to start on Android, no separate image app needed.</p>
+  <p class="lead">Describe a picture in your own words and Hubnex AI turns it into an image with <strong>GPT Image 2</strong>, right inside your chat. Or open <strong>Image Studio</strong> and start from a template: turn a selfie into a pro headshot, an action figure or an anime portrait. Free to start on Android.</p>
   <div class="actions">{{play}}</div>
   </div>
   {{shot:image-generation:eager}}
@@ -52,6 +64,41 @@
       <p>Reply to the image with what to change, like "make it night time", to get a new version.</p>
     </li>
   </ol>
+</section>
+
+<section class="band" aria-labelledby="studio-heading">
+  <div class="container section">
+    <div class="section-head">
+      <span class="eyebrow">New: Image Studio</span>
+      <h2 id="studio-heading">Image Studio: AI headshots, action figures and more in one tap</h2>
+      <p>Image Studio is a dedicated image screen in the side menu. Tap a template and it fills in a tested prompt for you, powered by GPT Image 2.</p>
+    </div>
+    <div class="media-split">
+      <div class="stack">
+        <h3>Transform your own photo</h3>
+        <p>Attach a selfie or any photo and pick a style. The app won't send until a photo is attached, so you can't get it wrong.</p>
+        <ul class="tick-list">
+          <li><strong>Pro Headshot:</strong> an AI headshot for LinkedIn or your CV</li>
+          <li><strong>Action Figure:</strong> yourself as a boxed action figure toy</li>
+          <li><strong>Anime Portrait:</strong> your photo as an anime character</li>
+          <li><strong>80s Vintage Photo:</strong> a retro film look</li>
+        </ul>
+        <h3>Create from a prompt</h3>
+        <p>Fill in the [brackets] and generate.</p>
+        <ul class="tick-list">
+          <li><strong>Logo Design</strong> for your brand or project</li>
+          <li><strong>Product Ad</strong> for an online shop</li>
+          <li><strong>Sale Poster</strong> for an offer or event</li>
+          <li><strong>Phone Wallpaper</strong> in any style</li>
+        </ul>
+        <p><strong>My Creations</strong> keeps every image you've made. Download it, share it, copy its prompt, or tap <strong>Edit Image</strong> to take it back into the chat and change it.</p>
+      </div>
+      <div class="shot-row">
+        <div class="shot-item">{{shot:image-studio}}</div>
+        <div class="shot-item">{{shot:photo-transform}}</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section container media-split" aria-labelledby="edit-heading">
@@ -89,6 +136,11 @@
       <p>Brainstorm an idea with ChatGPT or Claude, then generate the image in the same conversation.</p>
     </article>
     <article class="card">
+      <span class="icon">{{icon:image}}</span>
+      <h3>Powered by GPT Image 2</h3>
+      <p>OpenAI's image model, on every plan, including Free.</p>
+    </article>
+    <article class="card">
       <span class="icon">{{icon:reply}}</span>
       <h3>Edit by replying</h3>
       <p>Change an image by replying to it in plain words. No editing tools to learn.</p>
@@ -96,7 +148,7 @@
     <article class="card">
       <span class="icon">{{icon:layers}}</span>
       <h3>More than an image generator</h3>
-      <p>The same app also does web search, writing, file uploads and reasoning with the top AI models.</p>
+      <p>The same app also does web search, writing, file uploads and Thinking Mode with the top AI models.</p>
     </article>
   </div>
 </section>
@@ -119,7 +171,7 @@
       <thead><tr><th scope="col"></th><th scope="col">Free</th><th scope="col">Pro</th><th scope="col">Max</th></tr></thead>
       <tbody>
         <tr><th scope="row">AI image generator</th><td>Included</td><td>Included</td><td>Included</td></tr>
-        <tr><th scope="row">Daily allowance</th><td>Daily limit</td><td>About 20× Free</td><td>2× Pro, the largest</td></tr>
+        <tr><th scope="row">Daily allowance</th><td>Daily limit</td><td>About 10× Free</td><td>2× Pro (about 20× Free)</td></tr>
         <tr><th scope="row">Price</th><td>$0</td><td>$10 / month</td><td>$20 / month</td></tr>
       </tbody>
     </table>
